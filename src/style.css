@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, #101C40 0%, #1B2440 100%);
+    height: 100vh;
+    width: 100%;
+}
+
+#conteiner {
+    background-color: #4F5873;
+    max-width: 400px;
+    margin: 120px auto;
+    width: 100%;
+    border-radius: 5px;
+    padding: 25px;
+}
+
+#conteiner header {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#conteiner .inputField {
+    display: flex;
+    height: 45px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.inputField input {
+    font-size: 17px;
+    height: 100%;
+    width: 85%;
+    border: 1px solid #9498A6;
+    border-radius: 3px;
+    outline: none;
+    padding-left: 15px;
+}
+
+.inputField button {
+    background-color: #1B2440;
+    color: #9498A6;
+    font-size: 22px;
+    height: 100%;
+    width: 60px;
+    margin-left: 5px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#conteiner #toDoList {
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+#toDoList li {
+    background-color: #9498A6;
+    position: relative;
+    list-style: none;
+    line-height: 45px;
+    height: 45px;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    padding: 0 15px;
+    cursor: default;
+    overflow: hidden;
+}
+
+#toDoList li button {
+    position: absolute;
+    background-color: #1B2440;
+    color: red;
+    top: 0px;
+    right: -45px;
+    bottom: 0px;
+    width: 45px;
+    text-align: center;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    transition: all 0.8s ease;
+}
+
+#toDoList li:hover button {
+    right: 1px;
+}
+
+#conteiner #pseudoFooter {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#pseudoFooter button {
+    background-color: #1B2440;
+    color: #9498A6;
+    font-size: 16px;
+    border-radius: 3px;
+    padding: 6px 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}

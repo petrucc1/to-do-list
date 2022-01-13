@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="conteiner">
+
+        <header>To Do List</header>
+
+        <div class="inputField">
+            <input
+            type="text"
+            placeholder="Adicione uma nova tarefa">
+
+            <button>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAACPklEQVRIie2WQWsTURDHf/N2vZmzoKEo9dDvUA9J6aUWbLyIG4MgXkQSIx48KvoJpI29CULTVAJF2qR4ENKgpV/BmxSsem+vu288xEJ2s9tN2kYv/d/ezOz83izz5j041z+SDBs4W21O2MBfUJhHuYqQBUDZR9gT0bYfmI0vy96PMwHPPGpeUTd4AfoQcFLCLci6ujzvvvH2TgzOlRsFgRXgYtoGQ1IOESlt17zNpBCTDF2tCqyPDAUQMqAf85W1J8khsdBG4S80cWNDyoLcjqt8AJyr1LOi5hsplYqRaeurEcPXY9HKoSsy9bnm/eo3D1Qkal6nQQE6i95ud7m4kxaHkAlEX0XNIfBstTkB3E9NNqJUeZCr1LOJ4MAGBdKPzEnkYJ2FRDDo3BigAIjozWSwyvVxgVEm+5du2KmXon0uRqY7i95uUr7tWnHwZDxu3Ijp9sv9i9RzqjYYep4fyXEk9ZtwxcJvIBMOMTv5cmPgw6NK8+WGRn1WB0wg/AxljTi/p+30FArlDoEF3RoXVVTbiWA/MBtAMAaub422EsG9S1zenzlWedddKu33m9xojPjOS3X8O72rLVn5cn3aiGNiGymsA/9CMDCrY9t+pvxhTrEtTj8+rQiFzlKxFXXEnuNO7e4nRJ4B9lRQeBoHhZSnT768dgvVetpvj9GBqr3XfVtqJwUcO7m2a96mb9xJVBcBfwigRXTFd4Op46AwwvM2V6lnsc4CYucFuQYc3a/79IbDlordjHbvuf67/gBEQ7+wh29+BAAAAABJRU5ErkJggg==" alt="Plus icon">
+            </button>
+        </div>
+
+        <ul id="toDoList">
+            <li>Aprender uma nova linguagem
+                <button>
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjQiIGhlaWdodD0iMjQiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iI2U3NGMzYyI+PHBhdGggZD0iTTcxLjY2NjY3LDE0LjMzMzMzbC03LjE2NjY3LDcuMTY2NjdoLTM1LjgzMzMzdjE0LjMzMzMzaDExNC42NjY2N3YtMTQuMzMzMzNoLTM1LjgzMzMzbC03LjE2NjY3LC03LjE2NjY3ek0zNS44MzMzMyw1MC4xNjY2N3YxMDcuNWgxMDAuMzMzMzN2LTEwNy41ek01Ny4zMzMzMyw2NC41aDE0LjMzMzMzdjc4LjgzMzMzaC0xNC4zMzMzM3pNMTAwLjMzMzMzLDY0LjVoMTQuMzMzMzN2NzguODMzMzNoLTE0LjMzMzMzeiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+" alt="Trash icon"/>
+                </button>
+            </li>
+            <li>Completar projeto
+                <button>
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjQiIGhlaWdodD0iMjQiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iI2U3NGMzYyI+PHBhdGggZD0iTTcxLjY2NjY3LDE0LjMzMzMzbC03LjE2NjY3LDcuMTY2NjdoLTM1LjgzMzMzdjE0LjMzMzMzaDExNC42NjY2N3YtMTQuMzMzMzNoLTM1LjgzMzMzbC03LjE2NjY3LC03LjE2NjY3ek0zNS44MzMzMyw1MC4xNjY2N3YxMDcuNWgxMDAuMzMzMzN2LTEwNy41ek01Ny4zMzMzMyw2NC41aDE0LjMzMzMzdjc4LjgzMzMzaC0xNC4zMzMzM3pNMTAwLjMzMzMzLDY0LjVoMTQuMzMzMzN2NzguODMzMzNoLTE0LjMzMzMzeiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+" alt="Trash icon"/>
+                </button>
+            </li>
+            <li>Criar portfólio
+                <button>
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjQiIGhlaWdodD0iMjQiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iI2U3NGMzYyI+PHBhdGggZD0iTTcxLjY2NjY3LDE0LjMzMzMzbC03LjE2NjY3LDcuMTY2NjdoLTM1LjgzMzMzdjE0LjMzMzMzaDExNC42NjY2N3YtMTQuMzMzMzNoLTM1LjgzMzMzbC03LjE2NjY3LC03LjE2NjY3ek0zNS44MzMzMyw1MC4xNjY2N3YxMDcuNWgxMDAuMzMzMzN2LTEwNy41ek01Ny4zMzMzMyw2NC41aDE0LjMzMzMzdjc4LjgzMzMzaC0xNC4zMzMzM3pNMTAwLjMzMzMzLDY0LjVoMTQuMzMzMzN2NzguODMzMzNoLTE0LjMzMzMzeiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+" alt="Trash icon"/>
+                </button>
+            </li>
+            <li>Refazer logo da loja
+                <button>
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjQiIGhlaWdodD0iMjQiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iI2U3NGMzYyI+PHBhdGggZD0iTTcxLjY2NjY3LDE0LjMzMzMzbC03LjE2NjY3LDcuMTY2NjdoLTM1LjgzMzMzdjE0LjMzMzMzaDExNC42NjY2N3YtMTQuMzMzMzNoLTM1LjgzMzMzbC03LjE2NjY3LC03LjE2NjY3ek0zNS44MzMzMyw1MC4xNjY2N3YxMDcuNWgxMDAuMzMzMzN2LTEwNy41ek01Ny4zMzMzMyw2NC41aDE0LjMzMzMzdjc4LjgzMzMzaC0xNC4zMzMzM3pNMTAwLjMzMzMzLDY0LjVoMTQuMzMzMzN2NzguODMzMzNoLTE0LjMzMzMzeiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+" alt="Trash icon"/>
+                </button>
+            </li>
+            <li>Adicionar cores no site
+                <button>
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjQiIGhlaWdodD0iMjQiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iI2U3NGMzYyI+PHBhdGggZD0iTTcxLjY2NjY3LDE0LjMzMzMzbC03LjE2NjY3LDcuMTY2NjdoLTM1LjgzMzMzdjE0LjMzMzMzaDExNC42NjY2N3YtMTQuMzMzMzNoLTM1LjgzMzMzbC03LjE2NjY3LC03LjE2NjY3ek0zNS44MzMzMyw1MC4xNjY2N3YxMDcuNWgxMDAuMzMzMzN2LTEwNy41ek01Ny4zMzMzMyw2NC41aDE0LjMzMzMzdjc4LjgzMzMzaC0xNC4zMzMzM3pNMTAwLjMzMzMzLDY0LjVoMTQuMzMzMzN2NzguODMzMzNoLTE0LjMzMzMzeiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+" alt="Trash icon"/>
+                </button>
+            </li>
+        </ul>
+        <div id="pseudoFooter">
+            <span>Você tem 4 tarefas pendentes</span>
+            <button>Limpar tudo</button>
+        </div>
+    </div>
+</body>
+</html>
