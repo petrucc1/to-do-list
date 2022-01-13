@@ -13,6 +13,7 @@
 
         <header>To Do List</header>
 
+        <!-- Campo para adicionar tarefa -->
         <div class="inputField">
             <input
             type="text"
@@ -23,37 +24,20 @@
             </button>
         </div>
 
-        <ul id="toDoList">
-            <li>Aprender uma nova linguagem
-                <button>
-                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjQiIGhlaWdodD0iMjQiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iI2U3NGMzYyI+PHBhdGggZD0iTTcxLjY2NjY3LDE0LjMzMzMzbC03LjE2NjY3LDcuMTY2NjdoLTM1LjgzMzMzdjE0LjMzMzMzaDExNC42NjY2N3YtMTQuMzMzMzNoLTM1LjgzMzMzbC03LjE2NjY3LC03LjE2NjY3ek0zNS44MzMzMyw1MC4xNjY2N3YxMDcuNWgxMDAuMzMzMzN2LTEwNy41ek01Ny4zMzMzMyw2NC41aDE0LjMzMzMzdjc4LjgzMzMzaC0xNC4zMzMzM3pNMTAwLjMzMzMzLDY0LjVoMTQuMzMzMzN2NzguODMzMzNoLTE0LjMzMzMzeiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+" alt="Trash icon"/>
-                </button>
-            </li>
-            <li>Completar projeto
-                <button>
-                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjQiIGhlaWdodD0iMjQiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iI2U3NGMzYyI+PHBhdGggZD0iTTcxLjY2NjY3LDE0LjMzMzMzbC03LjE2NjY3LDcuMTY2NjdoLTM1LjgzMzMzdjE0LjMzMzMzaDExNC42NjY2N3YtMTQuMzMzMzNoLTM1LjgzMzMzbC03LjE2NjY3LC03LjE2NjY3ek0zNS44MzMzMyw1MC4xNjY2N3YxMDcuNWgxMDAuMzMzMzN2LTEwNy41ek01Ny4zMzMzMyw2NC41aDE0LjMzMzMzdjc4LjgzMzMzaC0xNC4zMzMzM3pNMTAwLjMzMzMzLDY0LjVoMTQuMzMzMzN2NzguODMzMzNoLTE0LjMzMzMzeiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+" alt="Trash icon"/>
-                </button>
-            </li>
-            <li>Criar portfólio
-                <button>
-                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjQiIGhlaWdodD0iMjQiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iI2U3NGMzYyI+PHBhdGggZD0iTTcxLjY2NjY3LDE0LjMzMzMzbC03LjE2NjY3LDcuMTY2NjdoLTM1LjgzMzMzdjE0LjMzMzMzaDExNC42NjY2N3YtMTQuMzMzMzNoLTM1LjgzMzMzbC03LjE2NjY3LC03LjE2NjY3ek0zNS44MzMzMyw1MC4xNjY2N3YxMDcuNWgxMDAuMzMzMzN2LTEwNy41ek01Ny4zMzMzMyw2NC41aDE0LjMzMzMzdjc4LjgzMzMzaC0xNC4zMzMzM3pNMTAwLjMzMzMzLDY0LjVoMTQuMzMzMzN2NzguODMzMzNoLTE0LjMzMzMzeiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+" alt="Trash icon"/>
-                </button>
-            </li>
-            <li>Refazer logo da loja
-                <button>
-                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjQiIGhlaWdodD0iMjQiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iI2U3NGMzYyI+PHBhdGggZD0iTTcxLjY2NjY3LDE0LjMzMzMzbC03LjE2NjY3LDcuMTY2NjdoLTM1LjgzMzMzdjE0LjMzMzMzaDExNC42NjY2N3YtMTQuMzMzMzNoLTM1LjgzMzMzbC03LjE2NjY3LC03LjE2NjY3ek0zNS44MzMzMyw1MC4xNjY2N3YxMDcuNWgxMDAuMzMzMzN2LTEwNy41ek01Ny4zMzMzMyw2NC41aDE0LjMzMzMzdjc4LjgzMzMzaC0xNC4zMzMzM3pNMTAwLjMzMzMzLDY0LjVoMTQuMzMzMzN2NzguODMzMzNoLTE0LjMzMzMzeiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+" alt="Trash icon"/>
-                </button>
-            </li>
-            <li>Adicionar cores no site
-                <button>
-                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjQiIGhlaWdodD0iMjQiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iI2U3NGMzYyI+PHBhdGggZD0iTTcxLjY2NjY3LDE0LjMzMzMzbC03LjE2NjY3LDcuMTY2NjdoLTM1LjgzMzMzdjE0LjMzMzMzaDExNC42NjY2N3YtMTQuMzMzMzNoLTM1LjgzMzMzbC03LjE2NjY3LC03LjE2NjY3ek0zNS44MzMzMyw1MC4xNjY2N3YxMDcuNWgxMDAuMzMzMzN2LTEwNy41ek01Ny4zMzMzMyw2NC41aDE0LjMzMzMzdjc4LjgzMzMzaC0xNC4zMzMzM3pNMTAwLjMzMzMzLDY0LjVoMTQuMzMzMzN2NzguODMzMzNoLTE0LjMzMzMzeiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+" alt="Trash icon"/>
-                </button>
-            </li>
+        <!-- Lista de tarefas -->
+        <ul class="toDoList">
+            <!-- Trazendo dados do localStorage (armazenamento local) -->
         </ul>
-        <div id="pseudoFooter">
-            <span>Você tem 4 tarefas pendentes</span>
+
+        <!-- Quantidade de tarefas pendentes -->
+        <div class="pseudoFooter">
+            <span>Você tem <span class="pendingNumber"></span> tarefas pendentes</span>
             <button>Limpar tudo</button>
         </div>
+
     </div>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
