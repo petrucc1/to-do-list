@@ -32,11 +32,12 @@ addBtn.onclick = ()=>{
 
 // Função para adicionar lista de tarefas dentro da tag "ul"
 function showTasks(){
-    let getLocalStorageData = localStorage.getItem("Nova tarefa"); // Obtendo localStorage (armazenamento local)
+    let getLocalStorageData = JSON.parse(localStorage.getItem("Nova tarefa")); // Obtendo localStorage (armazenamento local)
     let listArray = []; // Criando "array" vazia
-    if (getLocalStorageData == null) { // Se localStorage for "null"
+    if (getLocalStorageData.length == 0) { // Se localStorage for "null"
+        toDoList.innerHTML = '';
     } else {
-        listArray = JSON.parse(getLocalStorageData); // Trocando uma "string" JSON para um objeto JS
+        listArray = getLocalStorageData; // Trocando uma "string" JSON para um objeto JS
     }
     const pendingNumber = document.querySelector(".pendingNumber");
     pendingNumber.textContent = listArray.length; // Mostrando quantidade de tarefas pendentes
@@ -47,7 +48,7 @@ function showTasks(){
     }
     let newLiTag = "";
     listArray.forEach((element, index) =>{
-        newLiTag += `<li>${element}<span class="icon" onclick="deleteTask(${index})"><i class="fas fa-trash"></i></span>`
+        newLiTag += `<li>${element}<span class="icon" onclick="deleteTask(${index})"><i class="fas fa-trash" style="cursor: pointer; padding-left: 5px; color: red;"></i></span>`
         toDoList.innerHTML = newLiTag; // Adicionando nova linha dentro da lista
     inputBox.value = ""; // Quando uma tarefa for adicionada, o campo de entrada ficará em branco
     });
@@ -57,7 +58,7 @@ function showTasks(){
 // Função para deletar tarefas
 function deleteTask(index){
     let getLocalStorageData = localStorage.getItem("Nova tarefa");
-    listArray = JSON.parse(getLocalStorageData);
+    let listArray = JSON.parse(getLocalStorageData);
     listArray.splice(index, 1); // Deletar uma linha específica
     // Atualizando armazenamento local depois de remover uma linha da lista
     localStorage.setItem("Nova tarefa", JSON.stringify(listArray)); // Trocando um objeto JS para uma "string" JSON
@@ -66,7 +67,7 @@ function deleteTask(index){
 
 // Função para deletar todas as tarefas
 deleteAllBtn.onclick = ()=>{
-    listArray = []; // Deixa "array" vazia
+    let listArray = []; // Deixa "array" vazia
     // Atualizando armazenamento local depois de deletar todas as tarefas
     localStorage.setItem("Nova tarefa", JSON.stringify(listArray)); // Trocando um objeto JS para uma "string" JSON
     showTasks(); // Chamando função showTasks
