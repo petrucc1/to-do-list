@@ -68,6 +68,6 @@ function deleteTask(index){
 deleteAllBtn.onclick = ()=>{
     listArray = []; // Deixa "array" vazia
     // Atualizando armazenamento local depois de deletar todas as tarefas
-    localStorage.setItem("New Todo", JSON.stringify(listArray)); // Trocando um objeto JS para uma "string" JSON
+    localStorage.setItem("Nova tarefa", JSON.stringify(listArray)); // Trocando um objeto JS para uma "string" JSON
     showTasks(); // Chamando função showTasks
 }
