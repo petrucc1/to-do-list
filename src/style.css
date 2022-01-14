@@ -18,7 +18,7 @@ body {
 
 /* Estilização do conteiner central */
 #conteiner {
-    background-color: #4F5873;
+    background-color: #9498A6;
     max-width: 400px;
     margin: 120px auto;
     width: 100%;
@@ -75,7 +75,7 @@ body {
 }
 
 .toDoList li {
-    background-color: #9498A6;
+    background-color: #C1C1C1; 
     position: relative;
     list-style: none;
     line-height: 45px;
@@ -110,6 +110,7 @@ body {
     display: flex;
     width: 100%;
     margin-top: 20px;
+    font-weight: bold;
     align-items: center;
     justify-content: space-between;
 }

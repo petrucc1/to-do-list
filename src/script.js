@@ -2,7 +2,7 @@
 const inputBox = document.querySelector(".inputField input");
 const addBtn = document.querySelector(".inputField button");
 const toDoList = document.querySelector(".toDoList");
-const deleteAllBtn  = document.querySelector(".pseudoFooter button")
+const deleteAllBtn  = document.querySelector(".pseudoFooter button");
 
 inputBox.onkeyup = ()=>{
     let userEnteredValue = inputBox.value; // Obtendo valor inserido pelo usuário
@@ -19,8 +19,8 @@ inputBox.onkeyup = ()=>{
 addBtn.onclick = ()=>{
     let userEnteredValue = inputBox.value; // Obtendo valor inserido pelo usuário
     let getLocalStorageData = localStorage.getItem("Nova tarefa"); // Obtendo armazenamento local
+    let listArray = []; // Criando "array" vazia
     if (getLocalStorageData == null) { // Se o armazenamento local for "null"
-        listArray = []; // Criando "array" vazia
     } else {
         listArray = JSON.parse(getLocalStorageData); // Trocando uma "string" JSON para um objeto JS
     } 
@@ -33,8 +33,8 @@ addBtn.onclick = ()=>{
 // Função para adicionar lista de tarefas dentro da tag "ul"
 function showTasks(){
     let getLocalStorageData = localStorage.getItem("Nova tarefa"); // Obtendo localStorage (armazenamento local)
+    let listArray = []; // Criando "array" vazia
     if (getLocalStorageData == null) { // Se localStorage for "null"
-        listArray = []; // Criando "array" vazia
     } else {
         listArray = JSON.parse(getLocalStorageData); // Trocando uma "string" JSON para um objeto JS
     }
@@ -47,10 +47,11 @@ function showTasks(){
     }
     let newLiTag = "";
     listArray.forEach((element, index) =>{
-        newLiTag += '<li>${element}<span class="icon" onclick="(${index})"><i class="fas fa-trash"></i></span></li>';
-    });
-    toDoList.innerHTML = newLiTag; // Adicionando nova linha dentro da lista
+        newLiTag += `<li>${element}<span class="icon" onclick="deleteTask(${index})"><i class="fas fa-trash"></i></span>`
+        toDoList.innerHTML = newLiTag; // Adicionando nova linha dentro da lista
     inputBox.value = ""; // Quando uma tarefa for adicionada, o campo de entrada ficará em branco
+    });
+    
 }
 
 // Função para deletar tarefas
@@ -67,6 +68,6 @@ function deleteTask(index){
 deleteAllBtn.onclick = ()=>{
     listArray = []; // Deixa "array" vazia
     // Atualizando armazenamento local depois de deletar todas as tarefas
-    localStorage.setItem("Nova tarefa", JSON.stringify(listArray)); // Trocando um objeto JS para uma "string" JSON
+    localStorage.setItem("New Todo", JSON.stringify(listArray)); // Trocando um objeto JS para uma "string" JSON
     showTasks(); // Chamando função showTasks
 }
